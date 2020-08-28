@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+Update {{ object.email }} // {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+    <h1>Update {{ object.id }}</h1>
+
+    Updating for {{ object.email }}
+
+    {% include "form.html"  %}
+
+{% endblock content %}
